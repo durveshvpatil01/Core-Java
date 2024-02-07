@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Driver {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		ISRO s=new ISRO();
 		System.out.println(s.display());
