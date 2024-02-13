@@ -21,8 +21,7 @@ public class HashSetDemo {
 		obj1.add("Abhishek");
 		obj1.add("Aftab");
 		obj1.add("Atul");
-		System.out.println(obj1);
-		
+		System.out.println(obj1);		
 		
 		Set<String>obj2=new  TreeSet<>();
 		obj2.add("Akshay");
