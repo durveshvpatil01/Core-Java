@@ -1,4 +1,5 @@
 package com.edubridge.list;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -33,9 +34,37 @@ public class LinkedListdemo {
 			System.out.print(itr+" ");
 			
 		}
+		/*
 		Iterator<Object>itr1=obj.listIterator();
 		while(itr1.hasNext()) {
+			System.out.println(itr1+" ");
+		}*/
+		System.out.println("\nCollections");
+		Collections.reverse(obj);
+		
+		
+		for(Object itr1:obj) {
 			System.out.println(itr1+" ");
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
