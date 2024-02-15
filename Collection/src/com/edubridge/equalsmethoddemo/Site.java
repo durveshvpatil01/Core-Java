@@ -1,5 +1,7 @@
 package com.edubridge.equalsmethoddemo;
 
+import java.util.Objects;
+
 public class Site {
 
 	private String name;
@@ -20,6 +22,21 @@ public class Site {
 	}
 	public void setId(Integer id) {
 		this.id = id;
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, name);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Site other = (Site) obj;
+		return Objects.equals(id, other.id) && Objects.equals(name, other.name);
 	}
 	
 }
