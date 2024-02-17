@@ -17,7 +17,8 @@ public class ThreadDemo extends Thread{
 			
 			ThreadDemo t1=new ThreadDemo();
 			ThreadDemo t2=new ThreadDemo();
-
+			t1.setName("Durvesh");
+			t1.setPriority(7);
 			System.out.println(t1.getName()+" "+t2.getName());
 			
 			t1.start();
